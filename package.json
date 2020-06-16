@@ -1,0 +1,20 @@
+{
+  "name": "covid",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-beta.14"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@vue/compiler-sfc": "^3.0.0-beta.14",
+    "add": "^2.0.6",
+    "axios": "^0.19.2",
+    "snowpack": "^2.5.2",
+    "vite": "^0.20.0",
+    "yarn": "^1.22.4"
+  }
+}
