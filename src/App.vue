@@ -1,4 +1,6 @@
 <template>
+  <TheNavbar/>
+  <TheHero/>
   <img alt="Vue logo" src="./assets/logo.png" />
   {{response.confirmed.value}}
   <div v-for="nation in nations.countries" :key="nation.name">
@@ -8,12 +10,16 @@
 </template>
 
 <script>
+import TheNavbar from './components/TheNavbar.vue'
+import TheHero from './components/TheHero.vue'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    TheNavbar,
+    TheHero
   },
   data() {
     return {
