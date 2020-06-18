@@ -12,28 +12,17 @@
                 Brace yourself new normal is coming
               </h2>
               <h1>Indonesia Covid case</h1>
+              <p class="subheading">Last Update: {{indonesiaConfirmed.lastUpdate}}</p>
               <br>
               <div class="columns">
                 <div class="column">
-                  <div class="card">
-                    <div class="card-content">
-                      test
-                    </div>
-                  </div>
+                  <CardsItem title="Confirmed" :total="indonesiaConfirmed.confirmed.value"/>
                 </div>
                 <div class="column">
-                  <div class="card">
-                    <div class="card-content">
-                      test
-                    </div>
-                  </div>
+                  <CardsItem title="Recovered" :total="indonesiaConfirmed.recovered.value"/>
                 </div>
                 <div class="column">
-                  <div class="card">
-                    <div class="card-content">
-                      test
-                    </div>
-                  </div>
+                  <CardsItem title="Deaths" :total="indonesiaConfirmed.deaths.value"/>
                 </div>
               </div>
             </div>
@@ -46,6 +35,25 @@
     </section>
   </div>
 </template>
+
+<script>
+import CardsItem from './CardsItem.vue'
+export default {
+  components: {
+    CardsItem
+  },
+  data() {
+    return {
+      indonesiaConfirmed: null
+    }
+  },
+  created() {
+    fetch('https://covid19.mathdro.id/api/countries/indonesia')
+      .then(response => response.json() )
+      .then(response => this.indonesiaConfirmed = response)
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 
@@ -79,6 +87,10 @@ h1{
   font-family: $merriweather;
   font-size: 3vh;
   margin-bottom: 50px;
+}
+
+.subheading{
+  font-size: 2vh;
 }
 
 .bg-mask{
