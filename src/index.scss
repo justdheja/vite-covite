@@ -1,8 +1,5 @@
-.hero{
-  background: url('./assets/background.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-position: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&display=swap');
+
+$pacifico : 'Pacifico', cursive;
+$merriweather : 'Merriweather', serif;
+
