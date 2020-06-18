@@ -6,18 +6,18 @@
   <div v-for="nation in nations.countries" :key="nation.name">
     {{ nation.name }}
   </div>
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <TheFooter/>
 </template>
 
 <script>
 import TheNavbar from './components/TheNavbar.vue'
 import TheHero from './components/TheHero.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import TheFooter from './components/TheFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    TheFooter,
     TheNavbar,
     TheHero
   },

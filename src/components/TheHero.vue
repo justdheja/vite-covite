@@ -43,7 +43,8 @@ $bg-hero : #F5F4F4;
 
 .title{
   font-family: $pacifico;
-  color: black;
+  font-size: 10vh;
+  font-weight: 200;
 }
 
 .subtitle{
