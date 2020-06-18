@@ -3,6 +3,7 @@
   <TheHero/>
   <img alt="Vue logo" src="./assets/logo.png" />
   {{response.confirmed.value}}
+  {{response.lastUpdate}}
   <div v-for="nation in nations.countries" :key="nation.name">
     {{ nation.name }}
   </div>

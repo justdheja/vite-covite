@@ -11,6 +11,31 @@
               <h2 class="subtitle">
                 Brace yourself new normal is coming
               </h2>
+              <h1>Indonesia Covid case</h1>
+              <br>
+              <div class="columns">
+                <div class="column">
+                  <div class="card">
+                    <div class="card-content">
+                      test
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-content">
+                      test
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-content">
+                      test
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="column bg-mask">
               <img src="../assets/social_distancing.svg" alt="">
@@ -40,6 +65,9 @@ $bg-hero : #F5F4F4;
   margin: auto;
 }
 
+h1{
+  font-family: $merriweather;
+}
 
 .title{
   font-family: $pacifico;
@@ -50,6 +78,7 @@ $bg-hero : #F5F4F4;
 .subtitle{
   font-family: $merriweather;
   font-size: 3vh;
+  margin-bottom: 50px;
 }
 
 .bg-mask{
