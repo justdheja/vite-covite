@@ -42,16 +42,9 @@ export default {
   components: {
     CardsItem
   },
-  data() {
-    return {
-      indonesiaConfirmed: null
-    }
-  },
-  created() {
-    fetch('https://covid19.mathdro.id/api/countries/indonesia')
-      .then(response => response.json() )
-      .then(response => this.indonesiaConfirmed = response)
-  },
+  props:{
+    indonesiaConfirmed: Object
+  }
 }
 </script>
 

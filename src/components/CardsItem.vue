@@ -2,12 +2,12 @@
   <div>
     <div class="card">
       <div class="card-content">
-        <div class="title">
-          {{total}}
-        </div>
-        <div class="subtitle">
-          {{title}}
-        </div>
+          <div class="title">
+            {{total}}
+          </div>
+          <div class="subtitle">
+            {{title}}
+          </div>
       </div>
     </div>
   </div>
@@ -28,11 +28,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$card-height: 100px;
+
 .subtitle{
   font-size: 2vh;
 }
 
 .card{
-  height: 20vh;
+  height: $card-height;
+  transition: 1s;
 }
 </style>
