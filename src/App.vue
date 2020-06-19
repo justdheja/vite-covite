@@ -6,8 +6,6 @@
     <div v-show="pageReady">
       <!-- <TheNavbar/> -->
       <TheHero :indonesiaConfirmed="response"  @ready="ready"/>
-      {{response.confirmed.value}}
-      {{response.lastUpdate}}
       <!-- <div v-for="nation in nations.countries" :key="nation.name">
         {{ nation.name }}
       </div> -->
@@ -41,13 +39,16 @@ export default {
   created() {
     fetch('https://covid19.mathdro.id/api/countries/indonesia')
       .then(response => response.json())
-      .then(response => this.response = response)
+      .then(response => {
+        this.response = response
+        setTimeout(()=>{
+          this.pageReady = true
+        }, 2000)
+        
+      })
     fetch('https://covid19.mathdro.id/api/countries/')
       .then(response => response.json())
       .then(response => this.nations = response)
-    setTimeout(()=>{
-      this.pageReady = true
-    }, 2000)
   },
 }
 </script>
