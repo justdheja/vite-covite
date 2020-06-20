@@ -5,7 +5,7 @@
     </div>
     <div v-show="pageReady">
       <!-- <TheNavbar/> -->
-      <TheHero :indonesiaConfirmed="response"  @ready="ready"/>
+      <TheHero :indonesiaConfirmed="response"/>
       <!-- <div v-for="nation in nations.countries" :key="nation.name">
         {{ nation.name }}
       </div> -->

@@ -37,5 +37,13 @@ $card-height: 100px;
 .card{
   height: $card-height;
   transition: 1s;
+  position: center;
+}
+
+.card:hover{
+  .title{
+    font-size: 30px;
+  }
+
 }
 </style>
