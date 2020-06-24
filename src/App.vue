@@ -6,9 +6,19 @@
     <div v-show="pageReady">
       <!-- <TheNavbar/> -->
       <TheHero :indonesiaConfirmed="response"/>
-      <!-- <div v-for="nation in nations.countries" :key="nation.name">
-        {{ nation.name }}
-      </div> -->
+      <div class="control has-icons-left">
+        <div class="select">
+          <select @click="selectData()" v-model="selectedNation">
+            <option @click="selectData()" v-for="nation in nations.countries" :key="nation.name" :value="nation.iso2">
+              {{ nation.name }}
+            </option>
+          </select>
+        </div>
+        <span class="icon is-left">
+          <i class="fas fa-globe"></i>
+        </span>
+      </div>
+      {{selectedNation}}
       <TheFooter/>
     </div>
   </div>
@@ -33,7 +43,17 @@ export default {
     return {
       response: null,
       nations: null,
-      pageReady: false
+      pageReady: false,
+      selectedNation: null
+    }
+  },
+  methods:{
+    selectData(){
+      if(this.selectedNation!=null){
+        fetch(`https://covid19.mathdro.id/api/countries/${this.selectedNation}`)
+          .then(response => response.json())
+          .then(response => this.response = response)
+      }
     }
   },
   created() {
