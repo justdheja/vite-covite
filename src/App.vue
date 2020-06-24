@@ -57,7 +57,7 @@ export default {
     }
   },
   created() {
-    fetch('https://covid19.mathdro.id/api/countries/indonesia')
+    fetch('https://covid19.mathdro.id/api/')
       .then(response => response.json())
       .then(response => {
         this.response = response
