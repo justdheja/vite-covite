@@ -6,7 +6,7 @@
           <div class="columns">
             <div class="column text-place">
               <h1 class="title">
-                new normal
+                covite
               </h1>
               <h2 class="subtitle">
                 Brace yourself new normal is coming
