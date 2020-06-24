@@ -9,6 +9,9 @@
       <div class="control has-icons-left">
         <div class="select">
           <select @click="selectData()" v-model="selectedNation">
+            <option selected :value=null>
+              Global
+            </option>
             <option @click="selectData()" v-for="nation in nations.countries" :key="nation.name" :value="nation.iso2">
               {{ nation.name }}
             </option>
@@ -51,6 +54,10 @@ export default {
     selectData(){
       if(this.selectedNation!=null){
         fetch(`https://covid19.mathdro.id/api/countries/${this.selectedNation}`)
+          .then(response => response.json())
+          .then(response => this.response = response)
+      } else {
+        fetch(`https://covid19.mathdro.id/api/`)
           .then(response => response.json())
           .then(response => this.response = response)
       }
