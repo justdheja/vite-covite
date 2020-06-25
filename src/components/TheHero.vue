@@ -11,7 +11,7 @@
               <h2 class="subtitle">
                 Brace yourself new normal is coming
               </h2>
-              <h1>Indonesia Covid case</h1>
+              <slot></slot>
               <p class="subheading">Last Update: {{indonesiaConfirmed.lastUpdate}}</p>
               <br>
               <div class="columns">

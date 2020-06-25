@@ -5,7 +5,7 @@
     </div>
     <div v-show="pageReady">
       <!-- <TheNavbar/> -->
-      <TheHero :indonesiaConfirmed="response"/>
+      <TheHero :indonesiaConfirmed="response">
       <div class="control has-icons-left">
         <div class="select">
           <select @click="selectData()" v-model="selectedNation">
@@ -21,7 +21,7 @@
           <i class="fas fa-globe"></i>
         </span>
       </div>
-      {{selectedNation}}
+      </TheHero>
       <TheFooter/>
     </div>
   </div>
@@ -76,7 +76,7 @@ export default {
         this.response = response
         setTimeout(()=>{
           this.pageReady = true
-        }, 2000)
+        }, 1000)
         
       })
     fetch('https://covid19.mathdro.id/api/countries/')

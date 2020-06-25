@@ -4,6 +4,8 @@
       <div class="content has-text-centered">
         <p>
           Made with 💙 by justdheja
+          <br>
+          Data API by Mathdroid
         </p>
       </div>
     </footer>
