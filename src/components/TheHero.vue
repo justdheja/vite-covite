@@ -9,7 +9,7 @@
                 covite
               </h1>
               <h2 class="subtitle">
-                Brace yourself new normal is coming
+                use your mask & wash your hand
               </h2>
               <slot></slot>
               <p class="subheading">Last Update: {{indonesiaConfirmed.lastUpdate}}</p>
@@ -54,10 +54,11 @@ export default {
 
 $pacifico : 'Pacifico', cursive;
 $merriweather : 'Merriweather', serif;
-$bg-hero : #F5F4F4;
 
 .hero{
-  background: $bg-hero;
+  background: #E0EAFC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .text-place{
@@ -78,7 +79,7 @@ h1{
 
 .subtitle{
   font-family: $merriweather;
-  font-size: 3vh;
+  font-size: 2vh;
   margin-bottom: 50px;
 }
 

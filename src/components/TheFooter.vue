@@ -15,6 +15,6 @@
 <style lang="scss" scoped>
 .footer{
   background: #F5F4F4;
-  height: 25px;
+  height: 5px;
 }
 </style>

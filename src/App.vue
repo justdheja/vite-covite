@@ -30,7 +30,6 @@
 <script>
 import {IntersectingCirclesSpinner} from 'epic-spinners'
 import AppLoader from './components/AppLoader.vue'
-import TheNavbar from './components/TheNavbar.vue'
 import TheHero from './components/TheHero.vue'
 import TheFooter from './components/TheFooter.vue'
 
@@ -38,7 +37,6 @@ export default {
   name: 'App',
   components: {
     TheFooter,
-    TheNavbar,
     TheHero,
     AppLoader
   },
