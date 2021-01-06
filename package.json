@@ -13,7 +13,7 @@
     "@rollup/plugin-commonjs": "^13.0.0",
     "@vue/compiler-sfc": "^3.0.0-beta.14",
     "add": "^2.0.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "buefy": "^0.8.20",
     "sass": "^1.26.8",
     "snowpack": "^2.5.2",
